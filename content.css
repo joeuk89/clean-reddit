@@ -1,0 +1,16 @@
+/* Promoted posts, in the feed and in the sidebar. */
+shreddit-ad-post,
+shreddit-sidebar-ad,
+shreddit-dynamic-ad-link,
+shreddit-comments-page-ad,
+shreddit-feed > [promoted],
+shreddit-feed > article:has(> [promoted]),
+shreddit-ad-post + hr,
+/* "Suggested communities" block Reddit injects into subreddit feeds. */
+in-feed-community-recommendations,
+in-feed-community-recommendations + hr,
+/* Feed items the content script has classified as suggested. */
+.clean-reddit-hidden,
+.clean-reddit-hidden + hr {
+  display: none !important;
+}
